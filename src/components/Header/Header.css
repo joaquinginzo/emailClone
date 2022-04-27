@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+.header {
+  width: 1831px;
+  height: 42px;
+  left: 44px;
+  top: 17px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: -0.065em;
+  border-bottom: 1px solid #E8F1F1;
+}
+
+.header p {
+  position: absolute;
+  width: 124px;
+  height: 36px;
+  left: 44px;
+  top: 20px;
+}
+
+.header__span {
+  color: #57C5C5;
+}
+/*# sourceMappingURL=Header.css.map */

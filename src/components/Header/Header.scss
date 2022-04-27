@@ -1,0 +1,31 @@
+@import '../../assets/styles/styles.scss';
+
+.header{
+    width: 1831px;
+    height: 60px;
+    // left: 44px;
+    // top: 17px;
+    font-family: $primary-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -0.065em;
+    border-bottom: 1px solid $border-color;
+    display: flex;
+    &__logo{
+        display: flex;
+        align-items: center;
+        margin: 30px;
+    }
+    &__span{
+        color: $secondary-color
+    }
+    &__faceImage{
+        margin-left: 1160px;
+        height: 55px;
+        margin-top: 2px;
+        
+    }
+}
+

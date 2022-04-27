@@ -1,0 +1,48 @@
+@import '../../../../assets/styles/styles.scss';
+
+
+.email-item{
+    width: 427px;
+    height: 160px;
+    border-bottom: 2px solid $border-color;
+    border-right: 5px solid $secondary-color;
+    background-color: $terniary-color;
+    display: flex;
+    &__data-header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        color: #8C9CB1;
+        margin-top: 24px;
+        margin-bottom: 16px;
+    }
+    &__data-body p{
+        font-size: small;
+    }
+    img{
+        width: 45px;
+        height: 45px;
+        margin-top: 24px;
+        margin-left: 20px ;
+    }
+    &__data{
+        width: 292.64px;
+        height: 38px;
+        width: 292.64px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #1B3D51;
+        margin-left: 20px;
+    }    
+}
+.email-item.clicked{
+    background: linear-gradient(180deg, rgba(221, 221, 221, 0.26) 0%, rgba(196, 196, 196, 0) 45.66%);
+    border-right: none;
+}

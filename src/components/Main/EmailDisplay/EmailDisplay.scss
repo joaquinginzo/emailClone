@@ -1,0 +1,58 @@
+@import '../../../assets/styles/styles.scss';
+
+.email-display__header{
+    height: 77px;
+    display: flex;
+    margin: 80px;
+    margin-left: 60px;
+    img{
+        height: 60px ;
+    }
+    &-data{
+        margin-left: 20px;
+        margin-top:10px;
+        h5{
+            color: $secondary-color;
+        }
+        p{
+            font-size: 12px;
+            font-weight: 100;
+            margin-top: 5px;
+        }
+    }
+    &-control{
+        margin-left: 200px;
+        width: 200px;
+        button{
+            border-radius: 50%;
+            border: none;
+            margin: 5px;
+        }
+        img{
+            height: 20px;
+            width: 20px;
+            margin: 10px;
+        }
+    }
+}
+
+
+
+.email-display__body{
+    margin-left: 70px;
+    color: #1B3D51;
+    p{
+        margin-right: 80px;
+        margin-top: 20px;
+    }
+    &-control{
+        margin-left: 70px;
+        margin-top: 20px;
+        img{
+            height: 20px;
+        }
+        button{
+            margin-right: 10px;
+        }
+    }
+}
