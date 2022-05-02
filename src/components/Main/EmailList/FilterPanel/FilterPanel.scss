@@ -1,3 +1,19 @@
 @import '../../../../assets/styles/styles.scss';
 
+.filter-panel{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    &-compose{
+        background-color: $secondary-color;
+    }
+}
 
+.dropdown{
+    &__content{
+        display: none;
+    }
+    &__content.active{
+        display: block;
+    }
+}

@@ -3,7 +3,7 @@ import './EmailList.scss'
 import FilterPanel from './FilterPanel/FilterPanel'
 
 
-const EmailList = ({emailDataToDisplay,handleEmailDisplay}) => {
+const EmailList = ({emailDataToDisplay,handleEmailDisplay,clicked}) => {
 
   
   return (

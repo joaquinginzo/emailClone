@@ -8,7 +8,9 @@ import RightArrow from  '../../../assets/icons/right-arrow.png'
 import LeftArrow from  '../../../assets/icons/left-arrow.png'
 
 
-const EmailDisplay = ({name,title,text,date,id,handleForward, handleBackwards}) => {
+const EmailDisplay = ({name,title,text,date,id,handleForward, handleBackwards,handleDelete,handleRestore}) => {
+
+  
   return (
     <div className='email-display'>
       <div className="email-display__header">
@@ -19,8 +21,8 @@ const EmailDisplay = ({name,title,text,date,id,handleForward, handleBackwards}) 
         </div>
         <div className="email-display__header-control">
             <button><img src={Dots} alt="" /></button>
-            <button><img src={BlueArrow} alt="" /></button>
-            <button><img src={BlueTrash} alt="" /></button>
+            <button handleRestore={()=>handleRestore(id)}><img src={BlueArrow} alt="" /></button>
+            <button onClick={()=>handleDelete(id)}><img src={BlueTrash} alt="" /></button>
         </div>
       </div>
       <div className='email-display__body'>
@@ -28,8 +30,8 @@ const EmailDisplay = ({name,title,text,date,id,handleForward, handleBackwards}) 
         <p>{text}</p>
       </div>
       <div className="email-display__body-control">
-        <button onClick={handleBackwards}><img src={LeftArrow} alt="" /></button>
-        <button onClick={handleForward}><img src={RightArrow} alt="" /></button>
+        <button onClick={()=>handleBackwards(id)}><img src={LeftArrow} alt="" /></button>
+        <button onClick={()=>handleForward(id)}><img src={RightArrow} alt="" /></button>
       </div>
     </div>
   )

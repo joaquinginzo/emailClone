@@ -6,13 +6,15 @@ const EmailItem = ({name,title,text,date,id,handleEmailDisplay}) => {
 
   const monthsArray = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 
+  const [clicked, setClicked] = useState(false)
+
   const handleClick = (e) => {
-    e.target.className = 'email-item clicked'
+    setClicked(true)
     handleEmailDisplay(id)
   }
   return (
 
-    <div className='email-item' onClick={handleClick} >
+    <div className={`email-item ${clicked? 'clicked' : ''}`} onClick={handleClick} >
         <img src={FacePicture} alt="" />
         <div className="email-item__data">
           <div className="email-item__data-header">
