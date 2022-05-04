@@ -59,7 +59,7 @@ function App() {
     inboxcopy.push(emailArray[emailIndex])
     trashcopy.splice(emailIndex,1)
     setEmailData(inboxcopy)
-    setEmailDataToDisplay(inboxcopy)
+    setEmailDataToDisplay(trashcopy)
     setTrashData(trashcopy)
   }
 
@@ -87,6 +87,7 @@ function App() {
     }
   }
 
+  const filterByImportance
   useEffect(displayEmail,[emailIdToDisplay,emailDataToDisplay,emaildata,trashdata])
 
 

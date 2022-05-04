@@ -21,7 +21,7 @@ const EmailDisplay = ({name,title,text,date,id,handleForward, handleBackwards,ha
         </div>
         <div className="email-display__header-control">
             <button><img src={Dots} alt="" /></button>
-            <button handleRestore={()=>handleRestore(id)}><img src={BlueArrow} alt="" /></button>
+            <button onClick={()=>handleRestore(id)}><img src={BlueArrow} alt="" /></button>
             <button onClick={()=>handleDelete(id)}><img src={BlueTrash} alt="" /></button>
         </div>
       </div>
