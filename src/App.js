@@ -87,7 +87,7 @@ function App() {
     }
   }
 
-  const filterByImportance
+  
   useEffect(displayEmail,[emailIdToDisplay,emailDataToDisplay,emaildata,trashdata])
 
 
